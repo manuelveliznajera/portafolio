@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Freelance Developer",
+    company: "MVTECHGT",
+    description:
+      "Con una pasión innata por la tecnología y la innovación, Manuel Veliz ha llevado a MVTech a convertirse en una referencia para soluciones tecnológicas integrales.",
+    link: "https://mvtechgt.com",
+  },
+  {
+    date: "Diciembre 2023",
+    title: "Programador Web",
+    company: "Municipalidad de Guazacapan",
+    description:
+      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración.",
+  },
+  {
+    date: "Diciembre 2022",
+    title: "Programador Full-Stack",
+    company: "BesanaGlobal",
+    description:
+      "Responsable del diseño y creacion de una aplicación web de E-commerce usando Mysql, Laravel y Reactjs.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
